@@ -1,12 +1,12 @@
 {
   "name": "MorseBOX ADIF Export",
   "short_name": "MorseBOX ADIF",
-  "description": "Eksport ADIF z logów MorseBOX",
+  "description": "Eksport ADIF z logÃ³w MorseBOX",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#5FCBA1",
-  "orientation": "portrait",
+  "orientation": "any",
   "icons": [
     {
       "src": "icon-192.png",
