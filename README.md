@@ -1,6 +1,5 @@
 
-1.Instructions for Using MorseBOX ADIF Exporter
-(Instrukcja użycia MorseBOX ADIF Exporter):<br>
+1.Instructions for Using MorseBOX ADIF Exporter (Instrukcja użycia):<br>
 https://sq1ksm.github.io/morsebox-adif/help.html
 
 3. English version:<br>
