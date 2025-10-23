@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Author: Sławek Kuchowicz, version 1.0, October 2025 -->
+<html lang="pl">
+<!-- Autor: Sławek Kuchowicz, wersja 1.0, październik 2025 -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="SQ1KSM">
-    <title>ADIF Export from MorseBOX by SQ1KSM</title>
+    <title>Eksport ADIF z MorseBOX by SQ1KSM</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
@@ -22,38 +22,39 @@
 
 <body>
     <div class="header-container">
-        <img src="HAMHOBBY.webp" alt="Image" width="153" height="83">
+        <img src="HAMHOBBY.webp" alt="Obrazek" width="153" height="83">
         <div>
-            <h2>* ADIF Export from MorseBOX v2 *</h2>
-            <div class="subtitle">Version compatible with MorseBOX v7.02&nbsp; &nbsp; &nbsp;
+            <h2>** Eksport ADIF z MorseBOX **</h2>
+            <div class="subtitle">Wersja kompatybilna z MorseBOX v7.02&nbsp; &nbsp; &nbsp;
                 <a href="https://sq1ksm.github.io/morsebox-adif/help.html" target="_blank" rel="noopener noreferrer">
-                    Help</a>
+                    Pomoc</a>
             </div>
         </div>
     </div>
-    <div class="info">1. Enter your callsign!</div>
+    <div class="info">1. Wprowadź swój znak wywoławczy!</div>
     <div class="controls">
-        <label>Your callsign: <input type="text" id="myCallsign" placeholder="e.g. SQ1KSM"></label><br><br>
-        <div class="info">2. Load data saved by MorseBOX</div>
+        <label>Twój znak: <input type="text" id="myCallsign" placeholder="np. SQ1KSM"></label><br><br>
+        <div class="info">2. Załaduj dane zapisane przez MorseBOX</div>
         <input type="file" id="fileInput" accept=".txt">
 
         <div id="bandFillControl">
-            <div class="info">3. Single operating band, enter below</div>
-            <label>Band:
-                <input type="text" id="globalBandInput" placeholder="e.g. 20" maxlength="3">
+            <div class="info">3. Jedno pasmo pracy, wpisz poniżej</div>
+            <label>Pasmo:
+                <input type="text" id="globalBandInput" placeholder="np. 20" maxlength="3">
             </label>
-            <button id="fillBandBtn">Apply</button>
+            <button id="fillBandBtn">Wprowadź</button>
         </div>
     </div>
 
     <div id="tableContainer"></div>
 
     <div class="button-group">
-        <button id="deleteBtn">Delete selected</button>
-        <button id="addRowBtn">Add empty row</button>
-        <button id="exportBtn">Export to ADIF</button>
+        <button id="deleteBtn">Usuń zaznaczone</button>
+        <button id="addRowBtn">Dodaj pusty wiersz</button>
+        <button id="exportBtn">Eksportuj do ADIF</button>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
