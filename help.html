@@ -29,19 +29,19 @@
 
         h1 {
             color: #2c3e50;
-            border-bottom: 3px solid  #5FCBA1;
+            border-bottom: 3px solid #5FCBA1;
             padding-bottom: 10px;
             text-align: center;
         }
 
         h2 {
-            color:  #5FCBA1;
+            color: #5FCBA1;
             margin-top: 25px;
         }
 
         .badge {
             display: inline-block;
-            background:  #5FCBA1;
+            background: #5FCBA1;
             color: white;
             padding: 5px 10px;
             border-radius: 20px;
@@ -77,13 +77,13 @@
             padding: 15px;
             margin-bottom: 10px;
             background: #f8f9fa;
-            border-left: 4px solid  #5FCBA1;
+            border-left: 4px solid #5FCBA1;
             counter-increment: step;
         }
 
         .usage-steps li:before {
             content: counter(step);
-            background:  #5FCBA1;
+            background: #5FCBA1;
             color: white;
             width: 25px;
             height: 25px;
@@ -121,7 +121,7 @@
             display: inline-block;
             margin: 0 15px;
             padding: 10px 20px;
-            background:  #5FCBA1;
+            background: #5FCBA1;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -139,9 +139,29 @@
         }
 
         .language-section:target {
-            border: 2px solid  #5FCBA1;
+            border: 2px solid #5FCBA1;
             border-radius: 10px;
             padding: 20px;
+        }
+
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px 20px;
+            background: #5FCBA1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background: #3AB182;
         }
     </style>
 </head>
@@ -229,6 +249,8 @@
                 <li><code>BAND</code> - Band (if provided)</li>
             </ul>
 
+            <a href="https://sq1ksm.github.io/morsebox-adif/" class="back-button">Back to program</a>
+
             <div class="footer">
                 <p>Open-source project available under MIT license</p>
                 <p>Created by the amateur radio community for MorseBOX users</p>
@@ -314,6 +336,8 @@
                 <li><code>BAND</code> - Pasmo (jeśli podane)</li>
             </ul>
 
+            <a href="https://sq1ksm.github.io/morsebox-adif/" class="back-button">Powrót do programu</a>
+
             <div class="footer">
                 <p>Projekt open-source dostępny na licencji MIT</p>
                 <p>Stworzone przez społeczność krótkofalowców dla użytkowników MorseBOX</p>
@@ -322,7 +346,4 @@
     </div>
 </body>
 
-
 </html>
-
-
