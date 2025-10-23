@@ -1,3 +1,14 @@
+
+1. Instrukcja użycia MorseBOX ADIF Exporter:
+https://sq1ksm.github.io/morsebox-adif/help.html
+
+2. https://sq1ksm.github.io/morsebox-adif/
+
+3. Polska wersja: 
+https://sq1ksm.github.io/morsebox-adif/index_pl.html
+
+
+
 # MorseBOX ADIF Exporter - HELP
 
 **Web tool for exporting logs from MorseBOX to ADIF format**
