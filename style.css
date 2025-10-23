@@ -1,0 +1,266 @@
+body {
+    font-family: sans-serif;
+    margin: 2em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 1em;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 110px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 80px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 120px;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input.bandInput {
+    width: 40px;
+    text-align: center;
+}
+
+input.nameInput {
+    width: 120px;
+    text-align: center;
+}
+
+input.reportInput,
+input.reportReceivedInput {
+    width: 80px;
+    text-align: center;
+}
+
+input.reportInput:placeholder-shown,
+input.reportReceivedInput:placeholder-shown,
+input.bandInput:placeholder-shown {
+    color: red;
+}
+
+::placeholder {
+    color: red;
+}
+
+/* Blue checkboxes */
+input[type="checkbox"] {
+    accent-color: #4A90E2;
+    transform: scale(1.2);
+}
+
+.controls {
+    margin-bottom: 1em;
+}
+
+button {
+    margin-top: 1em;
+    padding: 8px 16px;
+    font-weight: bold;
+    background-color: #4DB890;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4DB890;
+}
+
+/* Blue delete button */
+#deleteBtn {
+    background-color: #4A90E2;
+}
+
+#deleteBtn:hover {
+    background-color: #3A7BC8;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.info {
+    color: #3AA379;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header-container img {
+    margin-right: 15px;
+}
+
+#bandFillControl {
+    display: none;
+    margin-top: 1em;
+}
+
+#globalBandInput {
+    width: 80px;
+    text-align: left;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 1em;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: 0.5em 0;
+    }
+
+    .controls {
+        margin-bottom: 0.5em;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+        width: 100%;
+        margin: 8px 0;
+        min-height: 48px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 8px 6px;
+        min-width: 70px;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 15%;
+        min-width: 60px;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 12%;
+        min-width: 50px;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4) {
+        width: 20%;
+        min-width: 80px;
+    }
+
+    input.bandInput {
+        width: 50px;
+        font-size: 14px;
+    }
+
+    input.nameInput {
+        width: 90px;
+        font-size: 14px;
+    }
+
+    input.reportInput,
+    input.reportReceivedInput {
+        width: 70px;
+        font-size: 14px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-container img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0.5em;
+    }
+
+    th,
+    td {
+        padding: 6px 4px;
+        font-size: 11px;
+    }
+
+    input.bandInput {
+        width: 40px;
+    }
+
+    input.nameInput {
+        width: 80px;
+    }
+
+    input.reportInput,
+    input.reportReceivedInput {
+        width: 60px;
+    }
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
