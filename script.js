@@ -17,44 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('bandFillControl').style.display = 'none';
 });
 
-let isPolish = false;
-
-document.getElementById('langPL').addEventListener('click', function () {
-    if (!isPolish) {
-        // Change to Polish
-        document.title = "Eksport ADIF z MorseBOX by SQ1KSM";
-        document.querySelector('h2').textContent = '* Eksport ADIF z MorseBOX v2 *';
-        document.querySelectorAll('.info')[0].textContent = '1. Wpisz swój znak wywoławczy!';
-        document.querySelectorAll('.info')[1].textContent = '2. Załaduj dane zapisane przez MorseBOX';
-        document.querySelectorAll('.info')[2].textContent = '3. Pojedyncze pasmo operacyjne, wpisz poniżej';
-        document.querySelector('label').innerHTML = 'Twój znak: <input type="text" id="myCallsign" placeholder="np. SQ1KSM">';
-        document.querySelector('#bandFillControl label').innerHTML = 'Pasmo: <input type="text" id="globalBandInput" placeholder="np. 20" maxlength="3">';
-        document.getElementById('fillBandBtn').textContent = 'Zastosuj';
-        document.getElementById('deleteBtn').textContent = 'Usuń zaznaczone';
-        document.getElementById('addRowBtn').textContent = 'Dodaj pusty wiersz';
-        document.getElementById('exportBtn').textContent = 'Eksportuj do ADIF';
-        document.getElementById('helpBtn').textContent = 'Pomoc';
-        document.getElementById('langPL').textContent = 'EN';
-        isPolish = true;
-    } else {
-        // Change back to English
-        document.title = "ADIF Export from MorseBOX by SQ1KSM";
-        document.querySelector('h2').textContent = '* ADIF Export from MorseBOX v2 *';
-        document.querySelectorAll('.info')[0].textContent = '1. Enter your callsign!';
-        document.querySelectorAll('.info')[1].textContent = '2. Load data saved by MorseBOX';
-        document.querySelectorAll('.info')[2].textContent = '3. Single operating band, enter below';
-        document.querySelector('label').innerHTML = 'Your callsign: <input type="text" id="myCallsign" placeholder="e.g. SQ1KSM">';
-        document.querySelector('#bandFillControl label').innerHTML = 'Band: <input type="text" id="globalBandInput" placeholder="e.g. 20" maxlength="3">';
-        document.getElementById('fillBandBtn').textContent = 'Apply';
-        document.getElementById('deleteBtn').textContent = 'Delete selected';
-        document.getElementById('addRowBtn').textContent = 'Add empty row';
-        document.getElementById('exportBtn').textContent = 'Export to ADIF';
-        document.getElementById('helpBtn').textContent = 'Help';
-        document.getElementById('langPL').textContent = 'PL';
-        isPolish = false;
-    }
-});
-
 // Regular expressions for parsing logs
 const callSignRegex = /\b([A-Z0-9]{1,3}\/?[A-Z0-9]{1,4}\/?[A-Z0-9]{1,5}(?:\/[A-Z0-9]{1,5})?)\b/g;
 const reportRegex = /\b([1-5H][1-9N][1-9N])\b/g;
@@ -260,7 +222,7 @@ function renderTable(data) {
     bandFillControl.style.display = hasData ? 'block' : 'none';
 
     if (!hasData) {
-        container.textContent = isPolish ? 'Brak danych do wyświetlenia.' : 'No data to display.';
+        container.textContent = 'No data to display.';
         return;
     }
 
@@ -268,11 +230,7 @@ function renderTable(data) {
     table.id = 'logTable';
 
     const header = document.createElement('tr');
-    const headers = isPolish ?
-        ['DATA', 'GODZINA', 'ZNAK', 'IMIĘ', 'RAPORT WYSŁANY', 'RAPORT OTRZYMANY', 'PASMO', 'ZAZNACZ'] :
-        ['DATE', 'TIME', 'CALLSIGN', 'NAME', 'REPORT SENT', 'REPORT RECEIVED', 'BAND', 'SELECT'];
-
-    headers.forEach(text => {
+    ['DATE', 'TIME', 'CALLSIGN', 'NAME', 'REPORT SENT', 'REPORT RECEIVED', 'BAND', 'SELECT'].forEach(text => {
         const th = document.createElement('th');
         th.textContent = text;
         header.appendChild(th);
@@ -367,7 +325,7 @@ document.getElementById('deleteBtn').addEventListener('click', function () {
 document.getElementById('fillBandBtn').addEventListener('click', function () {
     const globalBandValue = document.getElementById('globalBandInput').value.trim();
     if (!globalBandValue) {
-        alert(isPolish ? 'Proszę wpisać wartość pasma przed użyciem tej funkcji.' : 'Please enter a band value before using this function.');
+        alert('Please enter a band value before using this function.');
         return;
     }
 
@@ -390,8 +348,7 @@ document.getElementById('exportBtn').addEventListener('click', function () {
     const operator = document.getElementById('myCallsign').value.trim().toUpperCase();
 
     const crlf = '\r\n';
-    let adif = isPolish ? 'Eksport ADIF z MorseBOX' : 'ADIF Export from MorseBOX';
-    adif += crlf;
+    let adif = 'ADIF Export from MorseBOX' + crlf;
     adif += '<ADIF_VER:5>3.1.4' + crlf;
     adif += '<PROGRAMID:10>MorseBOX' + crlf;
     adif += '<PROGRAMVERSION:3>7.02' + crlf;
@@ -437,7 +394,7 @@ document.getElementById('exportBtn').addEventListener('click', function () {
     });
 
     if (count === 0) {
-        alert(isPolish ? "Brak rekordów ADIF do zapisania. Sprawdź dane w tabeli." : "No ADIF records saved. Check the data in the table.");
+        alert("No ADIF records saved. Check the data in the table.");
         return;
     }
 
