@@ -36,7 +36,7 @@ function isValidCallsign(call) {
     return true;
 }
 
-// Remove duplicates within 5 minutes
+// Remove duplicates within 2 minutes
 function removeDuplicatesWithin2Minutes(rows) {
     const seen = new Map();
     const uniqueRows = [];
@@ -55,7 +55,7 @@ function removeDuplicatesWithin2Minutes(rows) {
             const lastTime = seen.get(call);
             const timeDiff = (currentTime - lastTime) / (1000 * 60);
 
-            if (timeDiff > 5) {
+            if (timeDiff > 2) {
                 uniqueRows.push(row);
                 seen.set(call, currentTime);
             }
