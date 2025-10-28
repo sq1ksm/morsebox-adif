@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Regular expressions for parsing logs
 const callSignRegex = /\b([A-Z0-9]{1,3}\/?[A-Z0-9]{1,4}\/?[A-Z0-9]{1,5}(?:\/[A-Z0-9]{1,5})?)\b/g;
 const reportRegex = /\b([1-5H][1-9N][1-9N])\b/g;
-const nameRegex = /\bDR\s+([A-ZĄĆĘŁŃÓŚŹŻa-ząćęłńóśźż]{2,})\b/i;
+const nameRegex = /\bDR\s+([A-Z]{2,})\b/;
 
 // Check if it's a valid callsign
 function isValidCallsign(call) {
@@ -134,68 +134,62 @@ document.getElementById('fileInput').addEventListener('change', function (e) {
 function createEmptyRow() {
     const emptyRow = document.createElement('tr');
 
-    const tdDate = document.createElement('td');
-    const dateInput = document.createElement('input');
-    dateInput.type = 'text';
-    dateInput.placeholder = 'YYYY-MM-DD';
-    dateInput.style.width = '100%';
-    dateInput.addEventListener('input', function () {
-        formatDate(this);
+    const config = [
+        {
+            placeholder: 'YYYY-MM-DD',
+            formatter: formatDate,
+            style: { width: '100%' }
+        },
+        {
+            placeholder: 'HH:MM',
+            formatter: formatTime,
+            style: { width: '100%' }
+        },
+        {
+            placeholder: 'Callsign',
+            style: { width: '100%' }
+        },
+        {
+            placeholder: 'Name',
+            className: 'nameInput'
+        },
+        {
+            placeholder: 'RST',
+            className: 'reportInput',
+        },
+        {
+            placeholder: 'RST',
+            className: 'reportReceivedInput'
+        },
+        {
+            placeholder: 'XXX',
+            className: 'bandInput',
+
+        }
+    ];
+
+    config.forEach(item => {
+        const td = document.createElement('td');
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.placeholder = item.placeholder;
+
+        // Ustawianie klasy
+        if (item.className) input.className = item.className;
+
+        // Ustawianie stylów
+        if (item.style) {
+            Object.assign(input.style, item.style);
+        }
+
+        if (item.formatter) {
+            input.addEventListener('input', () => item.formatter(input));
+        }
+        td.appendChild(input);
+        emptyRow.appendChild(td);
     });
-    tdDate.appendChild(dateInput);
-    emptyRow.appendChild(tdDate);
 
-    const tdTime = document.createElement('td');
-    const timeInput = document.createElement('input');
-    timeInput.type = 'text';
-    timeInput.placeholder = 'HH:MM';
-    timeInput.style.width = '100%';
-    timeInput.addEventListener('input', function () {
-        formatTime(this);
-    });
-    tdTime.appendChild(timeInput);
-    emptyRow.appendChild(tdTime);
-
-    const tdCall = document.createElement('td');
-    const callInput = document.createElement('input');
-    callInput.type = 'text';
-    callInput.placeholder = 'Callsign';
-    callInput.style.width = '100%';
-    tdCall.appendChild(callInput);
-    emptyRow.appendChild(tdCall);
-
-    const tdName = document.createElement('td');
-    const nameInput = document.createElement('input');
-    nameInput.type = 'text';
-    nameInput.className = 'nameInput';
-    nameInput.placeholder = 'Name';
-    tdName.appendChild(nameInput);
-    emptyRow.appendChild(tdName);
-
-    const tdReportSent = document.createElement('td');
-    const reportSentInput = document.createElement('input');
-    reportSentInput.type = 'text';
-    reportSentInput.className = 'reportInput';
-    reportSentInput.placeholder = 'RST';
-    tdReportSent.appendChild(reportSentInput);
-    emptyRow.appendChild(tdReportSent);
-
-    const tdReportReceived = document.createElement('td');
-    const reportReceivedInput = document.createElement('input');
-    reportReceivedInput.type = 'text';
-    reportReceivedInput.className = 'reportReceivedInput';
-    reportReceivedInput.placeholder = 'RST';
-    tdReportReceived.appendChild(reportReceivedInput);
-    emptyRow.appendChild(tdReportReceived);
-
-    const tdBand = document.createElement('td');
-    const bandInput = document.createElement('input');
-    bandInput.type = 'text';
-    bandInput.className = 'bandInput';
-    bandInput.placeholder = 'XXX';
-    tdBand.appendChild(bandInput);
-    emptyRow.appendChild(tdBand);
-
+    // Checkbox cell
     const tdCheck = document.createElement('td');
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
