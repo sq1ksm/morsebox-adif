@@ -8,12 +8,12 @@
 **Web tool for exporting logs from MorseBOX to ADIF format**
 
 ## Features
-- ✅ **Load MorseBOX log files** (supports version 7.02 .txt files)
-- ✅ **Automatic log parsing** - extracts date, time, callsign, name and RST report
-- ✅ **Duplicate filtering** - removes same callsign duplicates within 2 minutes
-- ✅ **Data editing** - manually correct names, reports, and band information
-- ✅ **Export to ADIF** - generates proper ADIF file for logging software
-- ✅ **Delete entries** - remove unwanted QSOs before export
+- **Load MorseBOX log files** (supports version 7.02 .txt files)
+- **Automatic log parsing** - extracts date, time, callsign, name and RST report
+- **Duplicate filtering** - removes same callsign duplicates within 2 minutes
+- **Data editing** - manually correct names, reports, and band information
+- **Export to ADIF** - generates proper ADIF file for logging software
+- **Delete entries** - remove unwanted QSOs before export
 
 ##  How to Use
 1. **Enter your callsign** in the "Your callsign" field
@@ -36,7 +36,7 @@
 - `NAME` - Name (if available)
 - `BAND` - Band (if provided)
 
-## ⚠️ Important Note
+##  Important Note
 *This tool is not an official MorseBOX component, but was developed in consultation with the MorseBOX author and has functional compatibility approval.*
 
 ## Requirements
@@ -50,12 +50,12 @@
 **Narzędzie webowe do eksportu logów z MorseBOX do formatu ADIF**
 
 ## Funkcjonalności
-- ✅ **Wczytywanie plików logów MorseBOX** (obsługa plików .txt z wersji 7.02)
-- ✅ **Automatyczne parsowanie** - wyodrębnia datę, czas, znak, imię i raport RST
-- ✅ **Filtrowanie powtórzeń** - usuwa duplikaty tego samego znaku w ciągu 2 minut
-- ✅ **Edycja danych** - ręczna korekta imion, raportów i pasma
-- ✅ **Eksport do ADIF** - generuje plik ADIF dla programów logujących
-- ✅ **Usuwanie wpisów** - usuwanie niechcianych QSO przed eksportem
+- **Wczytywanie plików logów MorseBOX** (obsługa plików .txt z wersji 7.02)
+- **Automatyczne parsowanie** - wyodrębnia datę, czas, znak, imię i raport RST
+- **Filtrowanie powtórzeń** - usuwa duplikaty tego samego znaku w ciągu 2 minut
+- **Edycja danych** - ręczna korekta imion, raportów i pasma
+- **Eksport do ADIF** - generuje plik ADIF dla programów logujących
+- **Usuwanie wpisów** - usuwanie niechcianych QSO przed eksportem
 
 ## Jak używać
 1. **Wpisz swój znak** w polu "Twój znak"
@@ -78,7 +78,7 @@
 - `NAME` - Imię (jeśli dostępne)
 - `BAND` - Pasmo (jeśli podane)
 
-## ⚠️ Ważna uwaga
+## Ważna uwaga
 *Narzędzie nie jest oficjalnym komponentem MorseBOX, ale zostało opracowane w konsultacji z autorem MorseBOX i ma zatwierdzoną zgodność funkcjonalną.*
 
 ## Wymagania
