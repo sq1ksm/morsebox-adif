@@ -86,7 +86,7 @@ input[type="text"]:focus {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 5px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -135,7 +135,7 @@ table {
 th {
     background-color: #5FCBA1;
     color: white;
-    padding: 12px 8px;
+    padding: 5px 8px;
     font-weight: 600;
     font-size: 14px;
     position: sticky;
