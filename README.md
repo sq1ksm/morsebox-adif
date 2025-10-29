@@ -3,7 +3,7 @@
 3. Polska wersja: <br>https://sq1ksm.github.io/morsebox-adif/index_pl.html
 <hr>
 
-# MorseBOX ADIF Exporter - HELP
+# ADIF Export from MorseBOX - HELP
 
 **Web tool for exporting logs from MorseBOX to ADIF format**
 
@@ -45,7 +45,7 @@
 
 ---
 
-# MorseBOX ADIF Exporter - POMOC (PL)
+# ADIF Export from MorseBOX - POMOC (PL)
 
 **Narzędzie webowe do eksportu logów z MorseBOX do formatu ADIF**
 
