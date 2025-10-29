@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
-<!-- Autor: Sławek Kuchowicz, wersja 1.0, październik 2025 -->
+<!-- AUTHOR: SŁAWEK KUCHOWICZ · VERSION 3.0 · OCTOBER 2025 -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="SQ1KSM">
-    <title>Eksport ADIF z MorseBOX by SQ1KSM</title>
+    <title>Eksport ADIF z MorseBOX autorstwa SQ1KSM</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
@@ -21,42 +21,54 @@
 </head>
 
 <body>
-    <div class="header-container">
-        <img src="HAMHOBBY.webp" alt="Obrazek" width="153" height="83">
-        <div>
-            <h2>** Eksport ADIF z MorseBOX **</h2>
-            <div class="subtitle">Wersja kompatybilna z MorseBOX v7.02&nbsp; &nbsp; &nbsp;
-                <button
+    <div class="container">
+        <div class="header-section">
+            <img src="HAMHOBBY.webp" alt="Image" width="153" height="83" class="header-image">
+            <div class="header-text">
+                <h1>* * Eksport ADIF z MorseBOX v3 * *</h1>
+                <div class="subtitle">
+                    Compatible with MorseBOX v7.02 — created by SQ1KSM &nbsp; &nbsp;
                     <button onclick="window.open('https://sq1ksm.github.io/morsebox-adif/help.html', 'Pomoc')">
-  Pomoc
-</button>
+                        Pomoc
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="info">1. Wprowadź swój znak wywoławczy!</div>
-    <div class="controls">
-        <label>Twój znak: <input type="text" id="myCallsign" placeholder="np. SQ1KSM"></label><br><br>
-        <div class="info">2. Załaduj dane zapisane przez MorseBOX</div>
-        <input type="file" id="fileInput" accept=".txt">
 
-        <div id="bandFillControl">
-            <div class="info">3. Jedno pasmo pracy, wpisz poniżej</div>
-            <label>Pasmo:
-                <input type="text" id="globalBandInput" placeholder="np. 20" maxlength="3">
-            </label>
-            <button id="fillBandBtn">Wprowadź</button>
+        <div class="control-group">
+            <label for="myCallsign">Twój Znak Wywoławczy:</label>
+            <input type="text" id="myCallsign" placeholder="np. SQ1KSM">
+        </div>
+
+        <div class="control-group">
+            <label for="fileInput">Wczytaj dane zapisane przez MorseBOX:</label>
+            <input type="file" id="fileInput" accept=".txt,.log">
+        </div>
+
+        <div id="bandFillControl" class="control-group">
+            <label for="globalBandInput">Pojedyncze pasmo pracy, wpisz poniżej:</label>
+            <input type="text" id="globalBandInput" placeholder="np. 40">
+            <button type="button" id="fillBandBtn">Zastosuj</button>
+        </div>
+
+        <div id="tableContainer">
+            <!-- TABLE WILL BE RENDERED HERE -->
+        </div>
+
+        <!-- BUTTONS BELOW THE TABLE -->
+        <div class="table-buttons">
+            <button type="button" id="addRowBtn">Dodaj Pusty Wiersz</button>
+            <button type="button" id="deleteBtn">Usuń Zaznaczone</button>
+            <button type="button" id="exportBtn">Eksportuj ADIF</button>
         </div>
     </div>
 
-    <div id="tableContainer"></div>
-
-    <div class="button-group">
-        <button id="deleteBtn">Usuń zaznaczone</button>
-        <button id="addRowBtn">Dodaj pusty wiersz</button>
-        <button id="exportBtn">Eksportuj do ADIF</button>
-    </div>
-
-    <script src="script.js"></script>
+    <!-- SCRIPTS LOADED IN ORDER -->
+    <script src="js/parsers.js"></script>
+    <script src="js/formatters.js"></script>
+    <script src="js/tableManager.js"></script>
+    <script src="js/fileHandler.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

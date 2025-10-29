@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Author: Sławek Kuchowicz, version 1.0, October 2025 -->
+<!-- AUTHOR: SŁAWEK KUCHOWICZ · VERSION 3.0 · OCTOBER 2025 -->
 
 <head>
     <meta charset="UTF-8">
@@ -21,42 +21,54 @@
 </head>
 
 <body>
-    <div class="header-container">
-        <img src="HAMHOBBY.webp" alt="Image" width="153" height="83">
-        <div>
-            <h2>* ADIF Export from MorseBOX v2 *</h2>
-            <div class="subtitle">Version compatible with MorseBOX v7.02&nbsp; &nbsp; &nbsp;
-                <button
+    <div class="container">
+        <div class="header-section">
+            <img src="HAMHOBBY.webp" alt="Image" width="153" height="83" class="header-image">
+            <div class="header-text">
+                <h1>* * ADIF Export from MorseBOX v3 * *</h1>
+                <div class="subtitle">
+                    Compatible with MorseBOX v7.02 — created by SQ1KSM &nbsp; &nbsp;
                     <button onclick="window.open('https://sq1ksm.github.io/morsebox-adif/help.html', 'Help')">
-  Help
-</button>
+                        Help
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="info">1. Enter your callsign!</div>
-    <div class="controls">
-        <label>Your callsign: <input type="text" id="myCallsign" placeholder="e.g. SQ1KSM"></label><br><br>
-        <div class="info">2. Load data saved by MorseBOX</div>
-        <input type="file" id="fileInput" accept=".txt">
 
-        <div id="bandFillControl">
-            <div class="info">3. Single operating band, enter below</div>
-            <label>Band:
-                <input type="text" id="globalBandInput" placeholder="e.g. 20" maxlength="3">
-            </label>
-            <button id="fillBandBtn">Apply</button>
+        <div class="control-group">
+            <label for="myCallsign">Your Callsign:</label>
+            <input type="text" id="myCallsign" placeholder="e.g., SQ1KSM">
+        </div>
+
+        <div class="control-group">
+            <label for="fileInput">Load data saved by MorseBOX:</label>
+            <input type="file" id="fileInput" accept=".txt,.log">
+        </div>
+
+        <div id="bandFillControl" class="control-group">
+            <label for="globalBandInput">Single operating band, enter below:</label>
+            <input type="text" id="globalBandInput" placeholder="e.g., 40">
+            <button type="button" id="fillBandBtn">Apply</button>
+        </div>
+
+        <div id="tableContainer">
+            <!-- TABLE WILL BE RENDERED HERE -->
+        </div>
+
+        <!-- BUTTONS BELOW THE TABLE -->
+        <div class="table-buttons">
+            <button type="button" id="addRowBtn">Add Empty Row</button>
+            <button type="button" id="deleteBtn">Delete Selected</button>
+            <button type="button" id="exportBtn">Export ADIF</button>
         </div>
     </div>
 
-    <div id="tableContainer"></div>
-
-    <div class="button-group">
-        <button id="deleteBtn">Delete selected</button>
-        <button id="addRowBtn">Add empty row</button>
-        <button id="exportBtn">Export to ADIF</button>
-    </div>
-
-    <script src="script.js"></script>
+    <!-- SCRIPTS LOADED IN ORDER -->
+    <script src="js/parsers.js"></script>
+    <script src="js/formatters.js"></script>
+    <script src="js/tableManager.js"></script>
+    <script src="js/fileHandler.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
