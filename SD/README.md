@@ -1,8 +1,5 @@
 # Lesson Files — Overview / Pliki z lekcjami — opis
 
-This repository contains bilingual documentation: English first, followed by Polish.  
-Ten katalog zawiera dokumentację dwujęzyczną: najpierw angielski, potem polski.
-
 ---
 
 ## 🇬🇧 English Version
