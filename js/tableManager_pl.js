@@ -5,18 +5,18 @@ function createEmptyRow() {
     // CONFIGURATION ARRAY DEFINING EACH COLUMN'S PROPERTIES
     const config = [
         {
-            placeholder: 'YYYY-MM-DD',
+            placeholder: 'RRRR-MM-DD',
             formatter: formatDate
         },
         {
-            placeholder: 'HH:MM',
+            placeholder: 'GG:MM',
             formatter: formatTime
         },
         {
-            placeholder: 'Callsign'
+            placeholder: 'Znak'
         },
         {
-            placeholder: 'Name',
+            placeholder: 'Imię',
             className: 'nameInput'
         },
         {
@@ -28,7 +28,7 @@ function createEmptyRow() {
             className: 'reportReceivedInput'
         },
         {
-            placeholder: 'XXX',
+            placeholder: 'Pasmo',
             className: 'bandInput',
         }
     ];
@@ -120,7 +120,7 @@ function renderTable(data) {
         const nameInput = document.createElement('input');
         nameInput.type = 'text';
         nameInput.className = 'nameInput';
-        nameInput.placeholder = 'Name'; // ADDED PLACEHOLDER
+        nameInput.placeholder = 'Imię'; // ADDED PLACEHOLDER
         nameInput.value = row.name || '';
         tdName.appendChild(nameInput);
         tr.appendChild(tdName);
@@ -150,7 +150,7 @@ function renderTable(data) {
         const bandInput = document.createElement('input');
         bandInput.type = 'text';
         bandInput.className = 'bandInput';
-        bandInput.placeholder = 'XXX'; // ADDED PLACEHOLDER
+        bandInput.placeholder = 'Pasmo'; // ADDED PLACEHOLDER
         tdBand.appendChild(bandInput);
         tr.appendChild(tdBand);
 
