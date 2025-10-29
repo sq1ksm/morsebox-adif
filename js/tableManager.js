@@ -28,7 +28,7 @@ function createEmptyRow() {
             className: 'reportReceivedInput'
         },
         {
-            placeholder: 'XXX',
+            placeholder: 'BAND',
             className: 'bandInput',
         }
     ];
@@ -150,7 +150,7 @@ function renderTable(data) {
         const bandInput = document.createElement('input');
         bandInput.type = 'text';
         bandInput.className = 'bandInput';
-        bandInput.placeholder = 'XXX'; // ADDED PLACEHOLDER
+        bandInput.placeholder = 'BAND'; // ADDED PLACEHOLDER
         tdBand.appendChild(bandInput);
         tr.appendChild(tdBand);
 
