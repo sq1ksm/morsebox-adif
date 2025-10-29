@@ -23,7 +23,8 @@ This folder contains a set of text files used for practicing character, digit, a
 | `4_znaki.txt`        | Four characters — increased difficulty in sequence recognition.          |
 | `5_znaki.txt`        | Five characters — advanced practice for character strings.               |
 
-These files can be used in educational apps, OCR testing, screen reader exercises, or as training data for text recognition models.
+The files can be used in lessons on the MorseBOX device.
+
 
 ---
 
@@ -47,4 +48,4 @@ Ten katalog zawiera zestaw plików tekstowych wykorzystywanych do nauki rozpozna
 | `4_znaki.txt`        | Cztery znaki — zwiększona trudność w rozpoznawaniu sekwencji.         |
 | `5_znaki.txt`        | Pięć znaków — zaawansowane ćwiczenie na ciągi znaków.                 |
 
-Pliki mogą być wykorzystywane w aplikacjach edukacyjnych, testach OCR, ćwiczeniach z czytnikami ekranowymi lub jako dane treningowe dla modeli rozpoznawania tekstu.
+Pliki mogą być wykorzystywane w lekcjach na urządzezniu MorseBOX.
