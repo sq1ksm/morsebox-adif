@@ -1,5 +1,9 @@
 # Lesson Files — Overview / Pliki z lekcjami — opis
 
+## 📌 Language Navigation
+
+- [🇬🇧 English version](#english-version)
+- [🇵🇱 Wersja polska](#wersja-polska)
 ---
 
 ## 🇬🇧 English Version
