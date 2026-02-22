@@ -52,6 +52,6 @@ Ten katalog zawiera zestaw plików tekstowych wykorzystywanych do nauki rozpozna
 | `4_litery.txt`       | Cztery litery alfabetu — trening krótkich sekwencji literowych.       |
 | `5_znaki.txt`        | Pięć znaków — zaawansowane ćwiczenie na ciągi znaków.                 |
 | `5_litery.txt`       | Pięć liter alfabetu — ćwiczenie dłuższych sekwencji literowych.       |
-| `6_jflpxyqc.txt`     | Sześcioliterowe sekwencje z liter C F J L P X — trudne permutacje do zaawansowanego rozpoznawania. |
+| `6_jflpxyqc.txt`     | Sześcioliterowe sekwencje z liter C F J L P X — trudne permutacje do zaawansowanego treningu nadawania. |
 
 Pliki mogą być wykorzystywane w lekcjach na urządzezniu MorseBOX.
