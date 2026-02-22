@@ -21,9 +21,11 @@ This folder contains a set of text files used for practicing character, digit, a
 | `3_words.txt`        | Three full words — practicing reading and understanding simple words.    |
 | `3_chars.txt`        | Three characters (letters, digits, symbols) — mixed recognition.         |
 | `4_chars.txt`        | Four characters — increased difficulty in sequence recognition.          |
-| `5_chars.txt`        | Five characters — advanced sequence‑recognition training.                |
 | `4_letters.txt`      | Four alphabet letters — training short letter sequences.                 |
+| `5_chars.txt`        | Five characters — advanced sequence‑recognition training.                |
 | `5_letters.txt`      | Five alphabet letters — practicing longer pure‑letter sequences.         |
+| `6_jflpxyqc.txt`     | Six‑letter sequences using letters C F J L P X                           |
+|                      |                       — difficult permutations for advanced recognition. |
 
 The files can be used in lessons on the MorseBOX device.
 
@@ -48,8 +50,10 @@ Ten katalog zawiera zestaw plików tekstowych wykorzystywanych do nauki rozpozna
 | `3_wyrazy.txt`       | Trzy pełne wyrazy — ćwiczenie czytania i rozumienia prostych słów.    |
 | `3_znaki.txt`        | Trzy dowolne znaki (litery, cyfry, symbole) — mieszane rozpoznawanie. |
 | `4_znaki.txt`        | Cztery znaki — zwiększona trudność w rozpoznawaniu sekwencji.         |
-| `5_znaki.txt`        | Pięć znaków — zaawansowane ćwiczenie na ciągi znaków.                 |
 | `4_litery.txt`       | Cztery litery alfabetu — trening krótkich sekwencji literowych.       |
+| `5_znaki.txt`        | Pięć znaków — zaawansowane ćwiczenie na ciągi znaków.                 |
 | `5_litery.txt`       | Pięć liter alfabetu — ćwiczenie dłuższych sekwencji literowych.       |
+| `6_jflpxyqc.txt`     | Sześcioliterowe sekwencje z liter C F J L P X                         |
+|                      |                  — trudne permutacje do zaawansowanego rozpoznawania. |
 
 Pliki mogą być wykorzystywane w lekcjach na urządzezniu MorseBOX.
