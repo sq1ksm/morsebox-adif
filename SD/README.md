@@ -9,19 +9,21 @@ This folder contains a set of text files used for practicing character, digit, a
 
 ### 📄 File List and Descriptions
 
-| File Name            | Description                                                             |
-|----------------------|-------------------------------------------------------------------------|
-| `1_cyfra.txt`        | Contains a single digit (0–9) — perfect for basic digit recognition.     |
-| `1_litera.txt`       | One alphabet letter — for practicing letter identification.              |
-| `1_litera_cyf.txt`   | One character: either a letter or digit — mixed basic recognition.       |
-| `2_cyfry.txt`        | Two digits — training for reading two-digit numbers.                     |
-| `2_litery.txt`       | Two alphabetic characters — practicing short letter sequences.           |
-| `3_cyfry.txt`        | Three digits — recognition of three-digit numbers.                       |
-| `3_litery.txt`       | Three letters — training for letter combinations.                        |
-| `3_wyrazy.txt`       | Three full words — practice reading and understanding simple vocabulary. |
-| `3_znaki.txt`        | Three mixed characters (letters, digits, symbols) — varied recognition.  |
-| `4_znaki.txt`        | Four characters — increased difficulty in sequence recognition.          |
-| `5_znaki.txt`        | Five characters — advanced practice for character strings.               |
+| File name           | Description                                                             |
+|---------------------|-------------------------------------------------------------------------|
+| `1_digit.txt`        | Contains a single digit (0–9) — perfect for basic digit recognition.     |
+| `1_letter.txt`       | One alphabet letter — training for recognizing individual letters.       |
+| `1_letter_digit.txt` | One character: letter or digit — mixed basic character recognition.      |
+| `2_digits.txt`       | Two digits — training for reading two‑digit numbers.                     |
+| `2_letters.txt`      | Two alphabet letters — practicing short letter sequences.                |
+| `3_digits.txt`       | Three digits — recognition of three‑digit numbers.                       |
+| `3_letters.txt`      | Three letters — training for letter combinations.                        |
+| `3_words.txt`        | Three full words — practicing reading and understanding simple words.    |
+| `3_chars.txt`        | Three characters (letters, digits, symbols) — mixed recognition.         |
+| `4_chars.txt`        | Four characters — increased difficulty in sequence recognition.          |
+| `5_chars.txt`        | Five characters — advanced sequence‑recognition training.                |
+| `4_letters.txt`      | Four alphabet letters — training short letter sequences.                 |
+| `5_letters.txt`      | Five alphabet letters — practicing longer pure‑letter sequences.         |
 
 The files can be used in lessons on the MorseBOX device.
 
@@ -47,5 +49,7 @@ Ten katalog zawiera zestaw plików tekstowych wykorzystywanych do nauki rozpozna
 | `3_znaki.txt`        | Trzy dowolne znaki (litery, cyfry, symbole) — mieszane rozpoznawanie. |
 | `4_znaki.txt`        | Cztery znaki — zwiększona trudność w rozpoznawaniu sekwencji.         |
 | `5_znaki.txt`        | Pięć znaków — zaawansowane ćwiczenie na ciągi znaków.                 |
+| `4_litery.txt`       | Cztery litery alfabetu — trening krótkich sekwencji literowych.       |
+| `5_litery.txt`       | Pięć liter alfabetu — ćwiczenie dłuższych sekwencji literowych.       |
 
 Pliki mogą być wykorzystywane w lekcjach na urządzezniu MorseBOX.
