@@ -25,6 +25,10 @@ This folder contains a set of text files used for practicing both the recognitio
 | `5_chars.txt`        | Five characters — advanced mixed‑character sequences.                    |
 | `5_letters.txt`      | Five alphabet letters — longer letter sequences.                         |
 | `6_jflpxyqc.txt`     | Six‑letter sequences using letters C F J L P X — challenging permutations for advanced sending practice. |
+| `lamZn__01.txt`        | Short amateur‑radio callsigns with `/P`, `/MM`, `/QRP` — basic portable/maritime/QRP practice. |
+| `lamZn__02.txt`        | Medium‑length callsigns — extended portable/maritime/QRP sequences.          |
+| `lamZn__03.txt`        | Full long callsigns — complete training with realistic long sequences.       |
+| `lamZn__04.txt`        | Double‑broken callsigns (e.g., `XX0XXX/P/QRP`, `/M`, `/MM`) — advanced mixed portable/maritime/QRP practice. 
 
 The files can be used in lessons on the MorseBOX device.
 
@@ -53,5 +57,9 @@ Ten katalog zawiera zestaw plików tekstowych wykorzystywanych do nauki rozpozna
 | `5_znaki.txt`        | Pięć znaków — zaawansowane sekwencje mieszane.                         |
 | `5_litery.txt`       | Pięć liter alfabetu — dłuższe sekwencje literowe.                      |
 | `6_jflpxyqc.txt`     | Sześcioliterowe sekwencje z liter C F J L P X — trudne permutacje do zaawansowanego treningu nadawania. |
+| `lamZn__01.txt`        | Krótkie znaki wywoławcze z `/P`, `/MM`, `/QRP` — podstawowy trening portable/maritime/QRP. |
+| `lamZn__02.txt`        | Średniej długości znaki — rozszerzone sekwencje portable/maritime/QRP.      |
+| `lamZn__03.txt`        | Pełne długie znaki wywoławcze — realistyczny trening dłuższych sekwencji.   |
+| `lamZn__04.txt`        | Podwójnie łamane znaki (np. `XX0XXX/P/QRP`, `/M`, `/MM`) — zaawansowane ćwiczenia portable/maritime/QRP. |
 
 Pliki mogą być wykorzystywane w lekcjach na urządzezniu MorseBOX.
